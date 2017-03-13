@@ -17,8 +17,20 @@ $defined-bs-type: border-box !default;
 	}
 }
 
-@mixin fontRighteous($size: inherit) {
+@mixin fontRighteous($color: inherit, $size: inherit) {
   font-family: 'Righteous', cursive;
   font-weight: 400;
   font-size: $size;
+  color: $color;
+}
+@mixin border-radius($radius: 0rem) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin scale($size: 1.2) {
+  -ms-transform: scale($size);
+  -webkit-transform: scale($size);
+  transform: scale($size);
 }

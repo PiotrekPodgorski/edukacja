@@ -79,8 +79,7 @@ html {font-size: 62.5%;}
   }
 }
 .topHeader {
-  font-family: $FamilyFont1;
-  color: $color1;
+  @include fontRighteous($color1,inherit);
   &__tyt {
     padding-top: 3rem;
     font-size: $fontSizeH1;
@@ -96,12 +95,10 @@ html {font-size: 62.5%;}
   &__btn {
     text-align: center; /* center text*/
     &--txt {
-      font-family: $FamilyFont1;
+      @include fontRighteous($color1,$fontSizeButton);
       background-color: $color6;
       border: 0.2rem solid $color1;
-      border-radius: 4rem;
-      font-size: $fontSizeButton;
-      color: $color1;
+      @include border-radius(4rem);
       padding: 1.6rem 3rem; /* vertical < .buton.vertical horizontal - widht of button*/
       &:focus {
         text-decoration: none;
@@ -123,9 +120,7 @@ html {font-size: 62.5%;}
   padding: 1rem 0rem 1rem;
   margin: 1rem 0rem 1rem;
   &--txt {
-    font-family: $FamilyFont1;
-    font-size: 1.2*$fontSizeH1;
-    color: $color5;
+    @include fontRighteous($color5,1.2*$fontSizeH1);
     margin: 1rem 0 0.7rem;
   }
   &--underline {
@@ -139,8 +134,7 @@ html {font-size: 62.5%;}
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem auto;
   &--tyt {
-  font-family: $FamilyFont1;
-  font-size: $fontSizeH3;
+    @include fontRighteous(inherit,$fontSizeH3);
   }
   &--txt {
     font-size: $fontSizeLine;
@@ -168,12 +162,10 @@ html {font-size: 62.5%;}
   &__btn {
     text-align: center; /* center text*/
     &--txt {
-      font-family: $FamilyFont1;
+      @include fontRighteous($color1,$fontSizeButton);
       background-color: $color3;
       border: 0.2rem solid $color3;
-      border-radius: 4rem;
-      font-size: $fontSizeButton;
-      color: $color1;
+      @include border-radius(4rem);
       padding: 1.6rem 3rem; /* vertical < .buton.vertical horizontal - widht of button*/
       &:focus {
         text-decoration: none;
@@ -201,9 +193,7 @@ html {font-size: 62.5%;}
   padding: 5rem 0rem 3rem;
   margin: 1rem 0rem 1rem;
   &__tyt {
-    font-family: $FamilyFont1;
-    font-size: 1.2*$fontSizeH1;
-    color: $color1;
+    @include fontRighteous($color1,1.2*$fontSizeH1);
     margin: 1rem 0 0.7rem;
   }
   &__underline {
@@ -260,8 +250,7 @@ html {font-size: 62.5%;}
   cursor: pointer;
   text-decoration: none;
   &__tyt {
-    font-family: $FamilyFont1;
-    font-size: $fontSizeImg;
+    @include fontRighteous(inherit,$fontSizeImg);
   }
   &__txt {
     font-family: sans-serif;
