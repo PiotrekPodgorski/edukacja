@@ -16,8 +16,9 @@ $defined-bs-type: border-box !default;
 		right: 0;
 	}
 }
-@mixin fontRaleway($weight: 400, $size: inherit) {
-  font-family: 'Raleway', sans-serif;
-  font-weight: $weight;
+
+@mixin fontRighteous($size: inherit) {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
   font-size: $size;
 }

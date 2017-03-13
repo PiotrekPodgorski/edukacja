@@ -1,22 +1,9 @@
-$color1: #FFFFFF; /*text*/
-$color2: #BABABA; /* button hover*/
-$color3: #FF3838; /* button, tetxt, contact*/
-$color4: rgba(72, 101, 199, 1); /* button & texty*/
-$color5: #292929; /* galeria background*/
-$color6: transparent; /* button background*/
-$color7: #E6DB6C; /* top menu hover*/
-$FamilyFont1: 'Righteous', cursive;
-$fontSizeH1: 4.8rem;
-$fontSizeH3: 2.8rem;
-$fontSizeH4: 2.4rem;
-$fontSizeLine: 1.4rem;
-$fontSizeNorm: 1.0rem;
-$fontSizeLogo: 4.0rem;
-$fontSizeButton: 2.4rem;
-$fontSizeImg: 3.0rem;
+@import "partials/mixins";
+@import "partials/variables";
 
-* { box-sizing: border-box; }
-html { font-size: 62.5%; }
+html {@include bs;}
+*, *:before, *:after {@include bs(inherit);}
+html {font-size: 62.5%;}
 
 .containerTop {
   width: 100%;
@@ -27,7 +14,6 @@ html { font-size: 62.5%; }
 }
 .containerImg {
   background-image: url('../img/tlo.jpg');
-  /*lorempixel.com/output/technics-q-c-1600-1067-1.jpg*//**/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
