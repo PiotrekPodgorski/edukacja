@@ -1,0 +1,327 @@
+$color1: #FFFFFF; /*text*/
+$color2: #BABABA; /* button hover*/
+$color3: #FF3838; /* button, tetxt, contact*/
+$color4: rgba(72, 101, 199, 1); /* button & texty*/
+$color5: #292929; /* galeria background*/
+$color6: transparent; /* button background*/
+$color7: #E6DB6C; /* top menu hover*/
+$FamilyFont1: 'Righteous', cursive;
+$fontSizeH1: 4.8rem;
+$fontSizeH3: 2.8rem;
+$fontSizeH4: 2.4rem;
+$fontSizeLine: 1.4rem;
+$fontSizeNorm: 1.0rem;
+$fontSizeLogo: 4.0rem;
+$fontSizeButton: 2.4rem;
+$fontSizeImg: 3.0rem;
+
+* { box-sizing: border-box; }
+html { font-size: 62.5%; }
+
+.containerTop {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+}
+.containerImg {
+  background-image: url('../img/tlo.jpg');
+  /*lorempixel.com/output/technics-q-c-1600-1067-1.jpg*//**/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba($color4,0.55);
+  }
+}
+
+.headerNav {
+  margin: 0 auto;
+}
+
+.navTop {
+  background-color: $color6;
+  border: 0 solid $color6;
+}
+
+.logoS {
+  height: $fontSizeLogo;
+  padding: 0 1rem;
+  margin: 1rem auto;
+  .fa-desktop {
+    font-size: $fontSizeLogo;
+    color: $color1;
+  }
+  .logoText {
+    font-family: $FamilyFont1;
+    font-size: $fontSizeLogo;
+    color: $color1;
+    padding-left: 1rem;
+  }
+}
+
+#bs-example-navbar-collapse-1 {
+  .menuOnTop {
+    list-style: none;
+    height: $fontSizeLogo;
+    padding: 0 1rem;
+    margin: 1rem auto;
+    line-height: $fontSizeLogo;
+    &__item {
+      display: inline-block;
+      &--link {
+        font-size: $fontSizeLine;
+        color: $color1;
+        text-decoration: none;
+        padding: 1rem 0.5rem;
+        &:focus {
+          color: $color1;
+          text-decoration: none;
+        }
+        &:hover {
+          color: $color7;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.topHeader {
+  font-family: $FamilyFont1;
+  color: $color1;
+  &__tyt {
+    padding-top: 3rem;
+    font-size: $fontSizeH1;
+  }
+  &__txt {
+    font-size: $fontSizeH4;
+  }
+}
+
+.buton {
+  padding: 5rem 0 10rem;
+  margin: 0rem auto; /* center buuton*/
+  &__btn {
+    text-align: center; /* center text*/
+    &--txt {
+      font-family: $FamilyFont1;
+      background-color: $color6;
+      border: 0.2rem solid $color1;
+      border-radius: 4rem;
+      font-size: $fontSizeButton;
+      color: $color1;
+      padding: 1.6rem 3rem; /* vertical < .buton.vertical horizontal - widht of button*/
+      &:focus {
+        text-decoration: none;
+        color: $color1;
+      }
+      &:hover {
+        color: $color1;
+        background-color: $color3;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.textHeader {
+  padding: 1rem 0rem 1rem;
+  margin: 1rem 0rem 1rem;
+}
+.textHeader__tyt {
+  padding: 1rem 0rem 1rem;
+  margin: 1rem 0rem 1rem;
+  &--txt {
+    font-family: $FamilyFont1;
+    font-size: 1.2*$fontSizeH1;
+    color: $color5;
+    margin: 1rem 0 0.7rem;
+  }
+  &--underline {
+    height: 0.2rem;
+    width: 20rem;
+    background-color: $color3;
+    margin: 0 auto;
+  }
+}
+.textHeader__inn {
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 1rem auto;
+  &--tyt {
+  font-family: $FamilyFont1;
+  font-size: $fontSizeH3;
+  }
+  &--txt {
+    font-size: $fontSizeLine;
+    line-height: $fontSizeLine;
+    text-align: justify;
+    &--more {
+      color: $color3;
+      text-decoration: none;
+      padding-left: 1.5rem;
+      &:focus {
+        text-decoration: none;
+        color: $color3;
+      }
+      &:hover {
+        text-decoration: none;
+        color: $color3;
+      }
+    }
+  }
+}
+
+.buton2 {
+  padding: 5rem 0 10rem;
+  margin: 0rem auto; /* center buuton*/
+  &__btn {
+    text-align: center; /* center text*/
+    &--txt {
+      font-family: $FamilyFont1;
+      background-color: $color3;
+      border: 0.2rem solid $color3;
+      border-radius: 4rem;
+      font-size: $fontSizeButton;
+      color: $color1;
+      padding: 1.6rem 3rem; /* vertical < .buton.vertical horizontal - widht of button*/
+      &:focus {
+        text-decoration: none;
+        color: $color1;
+      }
+      &:hover {
+        color: $color1;
+        background-color: $color2;
+        border-color: $color2;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.noPadMar {
+  padding: 0;
+  margin: 0;
+}
+.galeriaDiv {
+  background-color: $color5;
+  padding: 0 3rem;
+}
+.galeriaHead {
+  padding: 5rem 0rem 3rem;
+  margin: 1rem 0rem 1rem;
+  &__tyt {
+    font-family: $FamilyFont1;
+    font-size: 1.2*$fontSizeH1;
+    color: $color1;
+    margin: 1rem 0 0.7rem;
+  }
+  &__underline {
+    height: 0.2rem;
+    width: 12rem;
+    background-color: $color3;
+    margin: 0 auto;
+  }
+}
+.divImg {
+  padding: 5rem 0rem;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Image zoom on hover + Overlay color */
+.imageBox {
+  width: 100%;
+  margin: 2rem 0rem;
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0;
+}
+
+.imageBox__img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+/* Several different images */
+.imgOne {background-image: url('http://lorempixel.com/400/200/sports/');}
+.imgTwo {background-image: url('http://lorempixel.com/400/200/nature/');}
+.imgThree {background-image: url('http://lorempixel.com/400/200/city/');}
+
+.aImage {
+  display: none;
+  color: $color1;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 5rem;
+  cursor: pointer;
+  text-decoration: none;
+  &__tyt {
+    font-family: $FamilyFont1;
+    font-size: $fontSizeImg;
+  }
+  &__txt {
+    font-family: sans-serif;
+    font-size: $fontSizeNorm;
+  }
+}
+.imageBox:hover .imageBox__img,  .imageBox:focus .imageBox__img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.imageBox:hover .imageBox__img:before, .imageBox:focus .imageBox__img:before {
+  display: block;
+}
+.imageBox:hover .aImage, .imageBox:focus .aImage {
+  display: block;
+  text-decoration: none;
+  color: $color1;
+}
+.imageBox__img:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba($color4,0.70);
+}
+
+.divContact {
+  padding: 1rem 0 1rem;
+  background-color: $color3;
+  &__box {
+    color: $color1;
+    padding: 5rem 0;
+    &--text {
+      font-size: $fontSizeH3;
+      line-height: $fontSizeH3;
+      padding-top: 1rem;
+    }
+  }
+}
+.bigIco {
+  font-size: 2*$fontSizeH1;
+}
+.smallIco {
+  font-size: $fontSizeH3;
+  padding-right: 1rem;
+}

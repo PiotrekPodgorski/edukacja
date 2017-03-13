@@ -1,0 +1,23 @@
+$defined-bs-type: border-box !default;
+@mixin bs($bs-type: $defined-bs-type) {
+  -webkit-box-sizing: $bs-type;
+  -moz-box-sizing: $bs-type;
+  box-sizing: $bs-type;
+}
+
+@mixin push--auto {
+	margin: {
+		left: auto;
+		right: auto;
+	}
+
+	padding: {
+		left: 0;
+		right: 0;
+	}
+}
+@mixin fontRaleway($weight: 400, $size: inherit) {
+  font-family: 'Raleway', sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+}
