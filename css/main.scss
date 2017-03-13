@@ -23,7 +23,7 @@ html {font-size: 62.5%;}
     height: 100%;
     width: 100%;
     position: absolute;
-    background-color: rgba($color4,0.55);
+    background-color: $color4B;
   }
 }
 
@@ -45,9 +45,7 @@ html {font-size: 62.5%;}
     color: $color1;
   }
   .logoText {
-    font-family: $FamilyFont1;
-    font-size: $fontSizeLogo;
-    color: $color1;
+    @include fontRighteous($color1,$fontSizeLogo);
     padding-left: 1rem;
   }
 }
@@ -258,8 +256,7 @@ html {font-size: 62.5%;}
   }
 }
 .imageBox:hover .imageBox__img,  .imageBox:focus .imageBox__img {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  @include tscale;
 }
 .imageBox:hover .imageBox__img:before, .imageBox:focus .imageBox__img:before {
   display: block;
@@ -277,7 +274,7 @@ html {font-size: 62.5%;}
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba($color4,0.70);
+  background-color: $color4A;
 }
 
 .divContact {

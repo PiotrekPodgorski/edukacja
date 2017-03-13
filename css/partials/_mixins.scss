@@ -29,7 +29,7 @@ $defined-bs-type: border-box !default;
 	-ms-border-radius: $radius;
 	border-radius: $radius;
 }
-@mixin scale($size: 1.2) {
+@mixin tscale($size: 1.2) {
   -ms-transform: scale($size);
   -webkit-transform: scale($size);
   transform: scale($size);
